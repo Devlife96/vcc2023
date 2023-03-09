@@ -52,9 +52,6 @@ button{
     color: #68598A;
 }
 
-header{
-    border-bottom: 1px solid #cacaca;
-}
 .nav-item li a {
     color: #fff;
     font-size: 1.25rem;
@@ -89,4 +86,7 @@ header{
 .card-img img:hover{
     transform: scale(1.2);
 }
+/*menu*/
+
+
 

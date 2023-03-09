@@ -10,38 +10,44 @@
     <!--css link-->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/utilities.css">
-    <!--Import icon-sax-->
+    <!--responsive Link-->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!--Import font-awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
 <body>
-    <header class="w-full bg-dark">
-        <div class="container">
-            <nav class="d-flex flex-between p-16">
-                <div class="navbar-brand">
-                    <object data="../img/svg/web.svg" type=""></object>
-                </div>
-                <div class="navbar">
-                    <ul class="nav-item d-flex gap-1">
-                        <li class="nav-item active"><a href="../index.html">Home</a></li>
-                        <li class="nav-item"><a class="active" href="project.html">Projects</a></li>
-                        <li class="nav-item"><a href="about.html">About me</a></li>
-                        <li class="nav-item"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <header class="header w-full h-vh-100 bg-dark overflow-hidden">
+        <div class=" border-bottom-1">
+            <div class="container">
+                <nav class="d-flex flex-between p-16 position-relative">
+                    <div class="navbar-brand">
+                        <object data="../img/svg/web.svg" type=""></object>
+                    </div>
+                    <input type="checkbox" name="toggle" id="nav-toggle" class="nav-toggle" hidden>
+                    <label for="nav-toggle" class="nav-label-toggle">
+                        <span></span>
+                    </label>
+                    <div class="navbar">
+                        <ul class="nav-item d-flex gap-1">
+                            <li class="nav-item active"><a href="../index.html">Home</a></li>
+                            <li class="nav-item"><a class="active" href="project.html">Projects</a></li>
+                            <li class="nav-item"><a href="about.html">About me</a></li>
+                            <li class="nav-item"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </header>
-    <section class="hero w-full h-700 bg-dark">
+        <div class="overlay"></div>
         <div class="container">
-            <div class="d-flex align-items-center  gap-1">
+            <div class="banner d-flex align-items-center  gap-1 position-relative ">
                 <div class="content-hero flex-basis-50 py-64">
                     <h1 class="fs-70 fw-900 text-white mb-1">
-                        I invite you to discover  <span class="w-auto h-auto position-relative">
-                            with me
+                        Welcome to my personnal <span class="w-auto h-auto position-relative">
+                            website
                             <object data="../img/svg/line-curly.svg" width="180" height="100" type=""
-                                class="position-absolute svg-position"></object>
+                                class="position-absolute svg-position curve"></object>
                         </span>
-                        different projects.
                     </h1>
                     <p class="text-gray mb-2">
                         My name is Hans Kévin H. Bayonne, i’m a web designer with five years experiences,
@@ -57,21 +63,23 @@
                     </div>
                 </div>
                 <div class="hero-box w-full  h-700 flex-basis-50  position-relative">
-                    <div class="w-480 h-550 position-absolute bottom-0 right-0 z-index-3">
+                    <div class="h-box-1-p w-480 h-550 position-absolute bottom-0 right-0 z-index-3">
                         <img src="../img/banner/project.png" class="img-fluid w-full h-full" alt="" srcset="">
                     </div>
-                    <div class="w-300 h-450 border-4 bg-purple position-absolute top-100 right-50 z-index-2"></div>
-                    <div class=" w-300 h-450 border-4 bg-dark-purple position-absolute top-150  left-150 opacity-3 z-index-1"></div>
+                    <div class="h-box-2-p w-300 h-450 bg-purple position-absolute top-100 right-50 border-4 z-index-2"></div>
+                    <div class="h-box-3-p w-400 h-400 bg-dark-purple position-absolute top-150 right-50 border-4 opacity-3">
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
+    
     <section class="py-100 bg-dark-purple position-relative">
         <div class="container">
-            <h3 class="fs-38 text-gray mb-3 fw-800 position-relative">
+            <h3 class="headline fs-38 text-gray mb-3 fw-800 position-relative">
                 All of my projects
                 <object data="../img/svg/line-curly.svg" width="100" height="80" type=""
-                    class="position-absolute left-0 top-20 bottom-0"></object>
+                    class="position-absolute left-0 top-20 bottom-0 curve"></object>
             </h3>
             <div class="d-flex flex-wrap  align-items-center gap-2 mb-6">
                 <div class="card h-auto flex-basis p-32 bg-dark-purple shadow">
@@ -174,6 +182,26 @@
                         <button class="btn bg-purple p-16 rounded-5 text-white fs-20">View project</button>
                     </div>
                 </div>
+                <div class="card h-auto flex-basis p-32 bg-dark-purple shadow">
+                    <div class="card-img w-full h-450 bg-purple rounded-1 overflow-hidden mb-3">
+                        <img src="../img/project/12.jpg" alt="" class="img-fluid object-fit w-full h-full">
+                    </div>
+                    <div class="card-content w-8 h-auto">
+                        <p class="fs-20 text-gray fw-600 mb-2">02/05</p>
+                        <h2 class="fs-38 text-gray fw-800 mb-2">Let us do all the work for you so you don’t have to</h2>
+                        <button class="btn bg-purple p-16 rounded-5 text-white fs-20">View project</button>
+                    </div>
+                </div>
+                <div class="card h-auto flex-basis p-32 bg-dark-purple shadow">
+                    <div class="card-img w-full h-450 bg-purple rounded-1 overflow-hidden mb-3">
+                        <img src="../img/project/13.png" alt="" class="img-fluid object-fit w-full h-full">
+                    </div>
+                    <div class="card-content w-8 h-auto">
+                        <p class="fs-20 text-gray fw-600 mb-2">02/05</p>
+                        <h2 class="fs-38 text-gray fw-800 mb-2">Let us do all the work for you so you don’t have to</h2>
+                        <button class="btn bg-purple p-16 rounded-5 text-white fs-20">View project</button>
+                    </div>
+                </div>
                 
             </div>
              <div class="middle-content">
@@ -182,14 +210,14 @@
             
         </div>
     </section>
-    <section class="py-100 bg-dark">
+    <section class="section py-100 bg-dark">
         <div class="container">
-            <div class="px-100">
-                <div class="mb-6">
-                    <object data="../img/svg/quoteup.svg" type=""></object>
+            <div class="testimoni px-100">
+                <div class="quote mb-6">
+                    <object data="../img/svg/quoteup.svg" type="" class="quote-svg"></object>
                 </div>
-                <div class="d-flex align-items-center gap-2">
-                    <div class="card text-center flex-basis p-32 border-2 rounded-1 position-relative p-16">
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                    <div class="card text-center flex-basis  border-2 rounded-1 position-relative p-16">
                         <div
                             class=" w-100 h-100 border-2 rounded-pill   position-absolute top-absolute overflow-hidden middle-content">
                             <img src="../img/project/2.jpg" class="w-full  h-auto position-absolute" alt="" srcset="">
@@ -201,7 +229,7 @@
                             by injected humour, or randomised words which don't look even slightly believable.
                         </p>
                     </div>
-                    <div class="card text-center flex-basis p-32 border-2 rounded-1 position-relative p-16">
+                    <div class="card text-center flex-basis border-2 rounded-1 position-relative p-16">
                         <div
                             class=" w-100 h-100 border-2 rounded-pill  position-absolute top-absolute overflow-hidden middle-content">
                             <img src="../img/project/4.jpg" class="w-full  h-auto position-absolute" alt="" srcset="">
@@ -213,14 +241,14 @@
                             by injected humour, or randomised words which don't look even slightly believable.
                         </p>
                     </div>
-    
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="py-64 bg-dark ">
+    <section class="section py-64 bg-dark ">
         <div class="container">
-            <div class="d-flex align-items-center gap-2 justify-content-center">
+            <div class="parteners d-flex align-items-center gap-2 justify-content-center">
                 <div class="w-200 h-100 rounded-5">
                     <img src="../img/icon/1.png" alt="" srcset="">
                 </div>
@@ -241,7 +269,7 @@
             <div class="mb-3">
                 <object data="../img/svg/web.svg" type=""></object>
             </div>
-            <div class="d-flex align-items-start gap-2">
+            <div class="footer d-flex align-items-start gap-2">
                 <div class="card flex-basis">
                     <h2 class="fs-30 fw-800 text-gray mb-1">Short Description</h2>
                     <p class="text-gray fs-20">
